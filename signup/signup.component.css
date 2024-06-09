@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('ac.jpg'); /* Replace 'background-image.jpg' with your image path */
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.wrapper {
+  position: relative;
+  max-width: 430px;
+  width: 100%;
+  background: #ffffff; /* White background */
+  padding: 60px 40px; /* Increased padding */
+  border-radius: 20px; /* Rounded corners */
+  overflow: hidden; /* Hide overflow for custom shape */
+}
+
+/* Custom shape */
+.wrapper:before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  left: -60px;
+  width: calc(100% + 120px);
+  height: calc(100% + 120px);
+  background: #ff6b81; /* Same as body background */
+  border-radius: 50%;
+  z-index: -1; /* Behind everything */
+  transform: rotate(45deg);
+}
+
+.wrapper h2 {
+  position: relative;
+  font-size: 28px; /* Larger font size */
+  font-weight: 600;
+  color: #2f3542; /* Dark gray color */
+  margin-bottom: 40px; /* Increased margin */
+}
+
+.wrapper h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px; /* Adjusted position */
+  height: 6px; /* Increased height */
+  width: 60px; /* Increased width */
+  border-radius: 12px;
+  background: #ff4757; /* Pink color */
+}
+
+.wrapper form {
+  margin-top: 40px; /* Increased margin */
+}
+
+.wrapper form .input-box {
+  height: 52px;
+  margin: 18px 0;
+}
+
+form .input-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 0 20px; /* Increased padding */
+  font-size: 18px; /* Larger font size */
+  font-weight: 500; /* Increased font weight */
+  color: #2f3542; /* Dark gray color */
+  border: none;
+  border-bottom: 2px solid #ff6b81; /* Pink bottom border */
+  border-radius: 0; /* Removed border-radius */
+  transition: all 0.3s ease;
+}
+
+.input-box input:focus,
+.input-box input:valid {
+  border-color: #57606f; /* Light gray color on focus */
+}
+
+form .policy {
+  display: flex;
+  align-items: center;
+  margin-top: 20px; /* Increased margin */
+}
+
+form h3 {
+  color: #57606f; /* Light gray color */
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.input-box.button input {
+  color: #fff;
+  letter-spacing: 1px;
+  border: 2px solid transparent; /* Added border */
+  background: #ff6b81; /* Pink button background */
+  cursor: pointer;
+  transition: background 0.3s ease, border-color 0.3s ease; /* Added transition for border-color */
+}
+
+.input-box.button input:hover {
+  background: #ff4757; /* Darker pink on hover */
+  border-color: #ff4757; /* Border color change on hover */
+  box-shadow: 0 0 10px #ff4757, 0 0 20px #ff4757, 0 0 40px #ff4757; /* Box shadow for glowing effect */
+}
+
+
+form .text h3 {
+  color: #2f3542; /* Dark gray color */
+  font-size: 14px;
+  text-align: center;
+}
+
+form .text h3 a {
+  color: #ff6b81; /* Pink link color */
+  text-decoration: none;
+}
+
+form .text h3 a:hover {
+  text-decoration: underline;
+}

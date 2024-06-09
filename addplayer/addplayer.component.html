@@ -1,0 +1,27 @@
+<title>Add player form</title>
+<body>
+  <h1>E-AUCTION</h1>
+  <div class="wrapper">
+    <h2>Add Player</h2>
+    <form #addPlayerForm="ngForm" (submit)="onSubmit(addPlayerForm)">
+      <div class="input-box">
+        <input type="text" placeholder="Player ID" required name="playerid" id="playerid" [(ngModel)]="player.playerid" #playerId="ngModel">
+      </div>
+      <div class="input-box">
+        <input type="text" placeholder="Player Name" required name="playername" id="playername" [(ngModel)]="player.playername" #playerName="ngModel">
+      </div>
+      <div class="input-box">
+        <input type="number" placeholder="Base Amount" required name="baseamt" id="baseamt" [(ngModel)]="player.baseamt" #baseAmt="ngModel">
+      </div>
+      <div class="input-box">
+        <input type="number" placeholder="Matches Played" required name="matches" id="matches" [(ngModel)]="player.matches" #matches="ngModel">
+      </div>
+      <div class="input-box button">
+        <input type="submit" value="Add Player" [disabled]="!addPlayerForm.valid">
+      </div>
+      <div class ="input-box button">
+        <a href="/admin" class="button">Back</a>
+      </div>  
+    </form>
+  </div>
+</body>

@@ -1,0 +1,87 @@
+/* General Styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+    background-image: url('IMG_TH23IPL_2_1_IG9AOA35.jpg'); /* Replace 'background-image.jpg' with your image path */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* E-Auction Title */
+  h1 {
+    text-align: center;
+    font-size: 3em;
+    color: #f05945; /* Orange */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Slight shadow */
+  }
+  
+  /* Wrapper */
+  .wrapper {
+    margin: 0 auto; /* Center the form horizontally */
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 10px; /* Rounded corners */
+    background-color: #fff; /* White background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle box-shadow */
+  }
+  
+  /* Headings */
+  h2 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #3498db; /* Blue */
+  }
+  
+  /* Input Boxes */
+  .input-box {
+    margin-bottom: 15px;
+    display: flex; /* Arrange label and input side-by-side */
+    align-items: center;
+  }
+  
+  .input-box label {
+    flex: 0 0 100px; /* Fixed width for label */
+    font-weight: bold;
+    color: #34495e; /* Darker gray */
+  }
+  
+  .input-box input {
+    flex: 1; /* Flexible width for input field */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.2s ease-in-out; /* Smooth border transition */
+  }
+  
+  .input-box:hover input {
+    border-color: #2ecc71; /* Green border on hover */
+  }
+  
+  /* Submit Button */
+  input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #2ecc71; /* Green */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; /* Indicate clickable button */
+    transition: background-color 0.2s ease-in-out; /* Smooth background transition */
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #27ae60; /* Darker green on hover */
+  }
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .button {
+    margin-right: 10px; /* Adjust as needed */
+  }
+  
+  

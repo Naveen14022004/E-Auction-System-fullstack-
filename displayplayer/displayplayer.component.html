@@ -1,0 +1,16 @@
+<table>
+<thead>
+ <th>playerid</th>
+ <th>playername</th>
+ <th>baseamount</th>
+ <th>matchplayed</th>
+ </thead>
+ <tbody>
+<tr *ngFor="let user of Users;let i=index; ">
+<td>{{user.playerid}}</td>
+<td>{{user.playername}}</td>
+<td>{{user.baseamt}}</td>
+<td>{{user.matches}}</td>
+</tr>
+</tbody>
+</table>

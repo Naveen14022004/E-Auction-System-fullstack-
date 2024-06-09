@@ -1,0 +1,152 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body styles */
+body {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  background-image: url('360_F_591225117_uZWKBYOFZ2QuqtE0YNAQhBV8i8GA6q53.jpg'); /* Replace 'background-image.jpg' with your image path */
+  background-size: cover;
+  background-position: center;
+  /* background: #f7f7f7;  */
+}
+
+/* Selection styles */
+::selection {
+  background: #4158d0;
+  color: #fff;
+}
+
+/* Form wrapper styles */
+.wrapper {
+  width: 380px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Form title styles */
+.wrapper .title {
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+  user-select: none;
+  border-radius: 15px 15px 0 0;
+  background: linear-gradient(-135deg, #FF69B4, #FF69B4); /* Gradient background */
+}
+
+/* Form styles */
+.wrapper form {
+  padding: 30px;
+}
+
+/* Form field styles */
+.wrapper form .field {
+  margin-top: 20px;
+  position: relative;
+}
+
+.wrapper form .field input {
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 17px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 25px;
+  background-color: #f2f5f9; /* Light blue background color */
+  transition: background-color 0.3s ease;
+}
+
+.wrapper form .field input:focus,
+form .field input:valid {
+  background-color: #dbeeff; /* Lighter blue background color on focus */
+}
+
+.wrapper form .field label {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  color: #888888; /* Gray label color */
+  font-weight: 400;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+form .field input:focus ~ label,
+form .field input:valid ~ label {
+  top: 10px;
+  font-size: 14px;
+  color: #FF69B4; /* Pink label color */
+  transform: translateY(-50%);
+}
+
+/* Form content styles */
+form .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+form .content .checkbox {
+  display: flex;
+  align-items: center;
+}
+
+form .content input {
+  width: 15px;
+  height: 15px;
+}
+
+form .content label {
+  color: #262626;
+  user-select: none;
+  padding-left: 5px;
+}
+
+/* Submit button styles */
+form .field input[type="submit"] {
+  height: 50px;
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #fff;
+  background: linear-gradient(-135deg, #FF69B4, #FF1493); /* Gradient button background */
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+form .field input[type="submit"]:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Signup link styles */
+form .signup-link {
+  margin-top: 20px;
+  text-align: center;
+}
+
+form .pass-link a,
+form .signup-link a {
+  color: #FF69B4; /* Pink link color */
+  text-decoration: none;
+}
+
+form .pass-link a:hover,
+form .signup-link a:hover {
+  text-decoration: underline;
+}

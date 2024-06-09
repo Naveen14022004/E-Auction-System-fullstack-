@@ -1,0 +1,28 @@
+<title>E-AUCTION</title>
+<body>
+  <h1>E-AUCTION</h1>
+  <div class="wrapper">
+    <h2>Buyer</h2>
+    <form #bidForm="ngForm" (submit)="submitBid(bidForm)">
+      <div class="input-box">
+        <input type="text" placeholder="Player ID" required name="playerid" id="playerid" [(ngModel)]="bid.playerid" #playerId="ngModel">
+      </div>
+      <div class="input-box">
+        <input type="text" placeholder="Player Name" required name="playername" id="playername" [(ngModel)]="bid.playername" #playerName="ngModel">
+      </div>
+      <div class="input-box">
+        <input type="number" placeholder="Amount" required name="amt" id="amt" [(ngModel)]="bid.amount" #amount="ngModel">
+      </div>
+      <div class="input-box button">
+        <input type="submit" value="Bid" [disabled]="!bidForm.valid">
+      </div>
+      <div class="button-container">
+        <a href="/descendinf" class="button buyer">Status</a>
+        <a href="/displayplayer" class="button buyer">Display</a>
+        <a href="/home" class="button buyer">Back</a>
+      </div>
+      
+       
+    </form>
+  </div>
+</body>
